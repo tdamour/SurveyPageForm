@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<!-- freeCodeCamp Project : Responsive Web Design - Survey Form -->
+<html lang="en">
+	<head> 
+	<meta charset="utf-8">
+	<title>Survey Form </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|VT323" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"> 
+	<!-- Source of nerdy emoji https://afeld.github.io/emoji-css/ --> 
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	</head> 
+	<body>
+		<div id="container">
+		<div id="title-header">
+			
+			<i class="em-svg em-nerd_face" id="icon"></i><h1 id="title">Nerdy Survey Form</h1>
+			
+		</div> 
+		<hr>
+			<p id="description">Welcome! Here at Nerdom, we love to get information about the interests of our community so we can better reflect in our articles and our memes.Fill out the current survey below.If you have any questions or concerns or you have comments on how can improve the survey form, just contact us at nerdomhelp@nerdom.com</p> 
+			
+			<form id="survey-form">
+			<!-- Name, Email & Age Section --> 
+			<div class="row">
+			<div class="labels">
+				<label id="name-label">Name:</label>   
+			</div>
+			<div class="tab">
+				<input type="text" class="inputs input-fields" id="name"  placeholder="Enter your name here" required /> <br/>
+			</div>
+			</div>
+			<div class="row">
+			<div class="labels">
+				<label id="email-label">Email:</label>  
+			</div>
+			<div class="tab">
+			<input type="email" id="email"  class="inputs input-fields" placeholder="Enter your email here"  required /> <br/> 
+			</div>
+			</div>
+			<div class="row">
+			<div class="labels">
+				<label id="number-label">Age:</label>   	
+			</div>
+			<div class="tab">
+			<input type="number"  name ="age"  class="inputs input-fields" id="age" placeholder="Enter your age here"  min="18" max="150" required /> 
+			</div>
+			</div> 
+				<br /> 
+				<br /> 
+				
+			<!-- Dropdown SELECT --> 
+			<div class="row">
+			<div class="labels">
+			<label>Dropdown:</label>
+			</div>
+			<div class="tab">
+			<select id="dropdown">
+				<option disabled value>
+						Employment: 
+				</option>
+				<option value="scientist">Scientist</option>
+				<option value="engineer">Engineer</option>
+				<option value="programmer">Programmer</option>
+				<option value="jedi">Jedi</option>
+				<option value="starfleet-captain">Starfleet Captain</option>
+				<option value="tsundere">Tsundere</option>
+				<option value="pokemon-trainer">Pokemon Trainer</option> 
+			</select> 
+			</div>
+			</div>
+			
+			<br /> 
+			<br /> 
+			
+			<!-- Radio buttons --> 
+			<div class="row">
+			<div class="labels">
+				<label>IQ: </label> 
+			</div>
+			<div class="tab" id="radio-tab">
+				<label class="radio-container" for="choice-one">
+				<input type="radio" name="radio-group" class="radio-btns" id="under-120" checked/ > Under 120 
+				</label>
+				<label class="radio-container" for="choice-two">
+				<input type="radio" name="radio-group"  class="radio-btns" id="at-120"/ > Extactly 120
+				</label>
+				<label class="radio-container" for="choice-two">
+				<input type="radio" name="radio-group"  class="radio-btns" id="over-120"/ > Over 120
+				</label>
+			</div> 
+			</div>
+			
+			<br /> 
+			<br /> 
+			<!-- Checkboxes --> 
+			<div class="row">
+			<div class="labels">
+				<label>Skills: </label>
+			</div>
+			<div class="tab" id="checkbox-tab">
+				<div class="checkbox">
+				<input type="checkbox" id="choice-aa"  class="check-boxes" name="checkbox-group"/>
+				<label class="checkbox-labels" for="mathematical-equations">
+				Mathematical Equations
+				</label> 
+				</div>
+				<div class="checkbox">
+				<input type="checkbox" id="choice-bb" class="check-boxes" name="checkbox-group"/>
+				<label class="checkbox-labels" for="c++">
+				C++
+				</label> 
+				</div>
+				<div class="checkbox">
+				<input type="checkbox"  id="choice-cc" class="check-boxes" name="checkbox-group"/>
+				<label class="checkbox-labels" for="scientific-method">
+				Scientific Method
+				</label> 
+				</div> 
+				<div class="checkbox">
+				<input type="checkbox"  id="choice-dd" class="check-boxes" name="checkbox-group"/>
+				<label class="checkbox-labels" for="lightsaber-mastery">
+				Lightsaber Mastery 
+				</label> 
+				</div> 
+				<div class="checkbox">
+				<input type="checkbox"  id="choice-dd" class="check-boxes" name="checkbox-group"/>
+				<label class="checkbox-labels" for="javascript">
+				JavaScript
+				</label> 
+				</div> 
+				<div class="checkbox">
+				<input type="checkbox"  id="choice-dd" class="check-boxes" name="checkbox-group"/>
+				<label class="checkbox-labels" for="taming-wild-pokemon">
+				Taming Wild Pokemon
+				</label> 
+				</div> 
+				<div class="checkbox">
+				<input type="checkbox"  id="choice-dd" class="check-boxes" name="checkbox-group"/>
+				<label class="checkbox-labels" for="tracking-bacteria">
+				Tracking Bacteria
+				</label> 
+				</div> 
+				<div class="checkbox">
+				<input type="checkbox"  id="choice-dd" class="check-boxes" name="checkbox-group"/>
+				<label class="checkbox-labels" for="c#">
+				C#
+				</label> 
+				</div> 
+				<div class="checkbox">
+				<input type="checkbox"  id="choice-dd" class="check-boxes" name="checkbox-group"/>
+				<label class="checkbox-labels" for="sql">
+				SQL
+				</label> 
+				</div> 
+				
+			</div> 
+			</div>
+			
+			<br /> 
+			<br /> 
+			
+			<!-- Comments textarea --> 
+			<div class="row">
+			<div class="labels">
+			<label id="comments-label">Comments: </label>
+			</div>
+			<div class="tab">
+			<textarea id="comments-box" placeholder="Share us your thoughts!"></textarea>
+			</div>
+			</div>
+			
+			<br /> 
+			<br /> 
+			
+			<!-- Submit Button --> 
+			<div class="btn-row">
+			<button id="submit-btn" type="submit">Submit</button> 
+			</div> 
+			</form> 
+		</div>
+	</body>
+</html> 

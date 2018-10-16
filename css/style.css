@@ -1,0 +1,287 @@
+/* General CSS for the Survey Page */ 
+/* Project Version */ 
+body{
+	background-color: #000; 
+	display: flex; 
+	margin: 0 auto;
+}
+
+#container {
+	background-color: #fff; 
+	padding: 20px 20px 20px 20px; 
+	margin: 0 auto; 
+	margin-top: 20px;
+	margin-bottom: 20px; 
+	width: 90%;
+}
+
+/* title, header row & description */ 
+#title-header{
+	text-align:center; 
+	padding-top: 10px; 
+	display: flex;
+	flex-direction: center;
+	justify-content:center;
+	align-items: center; 
+}
+
+#icon{
+	margin-top:5px;
+	margin-right:12px; 
+}
+#title{
+	text-align: center; 
+	font-family: 'VT323', monospace, sans-serif;
+	letter-spacing: 2px;
+	padding: 10px 10px 5px 20px; 
+	font-size:2.5em; 
+	
+}
+
+#container hr {
+	width: 75%; 
+	margin: 0 auto; 
+	border-top: 1px solid #8b0000; 
+}
+
+#description{
+	text-align: left; 
+	margin: 0 auto; 
+	padding: 15px;
+	width: 60%; 
+	font-family: 'Cutive Mono', monospace, sans-serif;
+
+}
+
+/* form general */ 
+
+#survey-form{
+	margin: 0 auto; 
+	padding: 10px; 
+	display: flex; 
+	align-items: flex-start; 
+	flex-direction: column; 
+	justify-content: center; 
+	width: 80%; 
+}
+
+
+/* row class */ 
+
+.row{
+	width: 100%; 
+	padding: 10px 5px 20px 5px; 
+	margin: 0 auto; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: flex-start; 
+	justify-content: flex-start; 
+}
+
+/* labels class and tab general */ 
+
+.labels{
+	vertical-align: top;
+	padding: 5px;
+	margin: 0 auto;
+	display: flex; 
+	align-items: flex-start; 
+	flex-direction: flex-start;
+	width: 60%;
+	font-family: 'Cutive Mono', monospace, sans-serif;
+	font-weight: bold; 
+	font-size: 1.3em; 
+}
+
+.tab{
+	text-align: left; 
+	margin: 0 auto; 
+	vertical-align: middle;
+	width: 62%; 
+	display: flex; 
+	flex-direction: row; 
+	align-items: flex-start; 
+	font-family: 'Cutive Mono', monospace, sans-serif;
+}
+
+/* .row input general */ 
+
+/* .row input-fields */ 
+.input-fields, #dropdown {
+	width:  96%;
+	height: 6.5vh;
+	margin: 0 auto; 
+	border: 0.5px solid black; 
+}
+
+.input-fields, #comments-box, #dropdown{
+	text-indent: 10px;
+	font-size: 1.2em; 
+}
+
+/* Remove controls from Firefox */ 
+input[type="number"]{
+	-moz-appearance: textfield; 
+}
+
+/* .row dropdown */ 
+#dropdown{
+
+}
+
+/* .row radio */ 
+#radio-tab{
+	display:flex;
+	flex-direction:column; 
+}
+.radio-container{
+	display:flex;
+	flex-direction:row; 
+	padding-left: 10px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.radio-btns{
+	height:20px;
+	width: 20px;
+}
+/* .row checkboxes */ 
+#checkbox-tab{
+	display:flex;
+	flex-direction:column; 
+}
+.checkbox{
+	display: flex; 
+	flex-direction:row; 
+	padding-left: 10px;
+	align-self: flex-start; 
+}
+input[type="checkbox"]{
+	height: 25px; 
+	width: 25px; 
+	
+}
+
+
+
+/* text area */ 
+#comments-box{
+	white-space: pre-wrap; 
+	word-wrap: break-word; 
+	width :100%; 
+	height: 30vh; 
+	border: 0.5px solid black; 
+	padding: 8px; 
+	
+}
+
+/* .row .submit-btn button */ 
+.btn-row{
+	width: 100%; 
+	display: flex; 
+	align-items: center; 
+	justify-content:  center; 
+	
+}
+#submit-btn{
+	margin: 0 auto; 
+	text-align: center; 
+	background-color: black; 
+	color: #fff; 
+	padding: 10px; 
+	font-weight:bold;
+	font-size: 1.2em; 
+	cursor: pointer; 
+	width: 35%; 
+	border: none;
+	border-radius: 25px;
+	font-size: 1.4em; 
+}
+
+#submit-btn:hover{
+	background-color:orange; 
+	color: black; 
+}
+
+/* media queries */ 
+@media only screen and (max-width: 800px){
+	body{
+		background-color: #000; 
+	}
+	#container {
+		padding: 0; 
+		width: 100%; 
+		overflow: hidden; 
+	}
+	
+	.row{
+		padding: 10px 5px 20px 5px; 
+		margin: 0 auto; 
+		display: flex; 
+		flex-direction: column; 
+		align-items: flex-start; 
+		justify-content:  center; 
+	}
+	
+	#title-header{
+		width:100%;
+		align-items: center;
+	}
+	
+	#title{
+		margin-top: 20px;
+		font-size: 2.1em; 
+	}
+	
+	#description{
+		padding: 20px; 
+		text-align: left; 
+	}
+	
+	.labels{
+		width:100%;
+		display:  flex; 
+		align-items: flex-start; 
+		flex-direction: row; 
+		margin-bottom: 12px; 
+		
+	}
+	.tab{
+		width: 100%; 
+		display: flex; 
+		align-items: flex-end; 
+		flex-direction: row; 
+	}
+	
+	.input-fields,  #dropdown{
+		width: 100%; 
+		height: 6.5vh; 
+	}
+	
+	#radio-tab{
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-end;
+		align-items:flex-start;		
+	}
+	
+	#checkbox-tab{
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-end;
+		align-items:flex-start;
+	}
+	
+	#submit-btn{
+		width: 50%;
+		
+		 
+	}
+}
+
+@media (max-width: 800px) and (orientation: landscape){
+		.input-fields,  #dropdown{
+		width: 100%; 
+		height: 8vh; 
+	}
+}
